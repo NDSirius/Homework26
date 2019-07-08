@@ -1,4 +1,3 @@
 <?php
-$hw = 'Edit     something   in this         file';
-preg_replace('/\\t{2,}/',"\t",$hw);
-var_dump($hw);
+echo preg_replace('/[\s]+/', ' ',
+        'Replace   all repeated    spaces in    the text with one').'<br>';
